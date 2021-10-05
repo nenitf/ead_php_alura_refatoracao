@@ -20,3 +20,11 @@ docker-compose up
 > Caso modifique Dockerfile, rebuilde com ``docker-compose up --build``
 
 > Para acessar o container use ``docker-compose exec app bash`` ou execute os scripts diretamente pelo Docker ``docker-compose exec app php public/arquivo-script.php``
+
+## Anotações
+
+### Técnicas de composição
+
+- **Extrair função**: remove trechos de códigos para funções. Ajuda na legibilidade, pois o nome da função pode descrever o objetivo do trecho de código.
+- **Incorporar função**: remove utilização de uma função. Ajuda na legibilidade, pois diminui a burocracia de fazer coisas pequenas que não precisariam de uma função específica.
+- **Extrair variável**: nomeia um trecho para uma variável. Ajuda na legibilidade, pois torna a leitura do algoritmo mais "natural".
