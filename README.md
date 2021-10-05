@@ -28,3 +28,6 @@ docker-compose up
 - **Extrair função**: remove trechos de códigos para funções. Ajuda na legibilidade, pois o nome da função pode descrever o objetivo do trecho de código.
 - **Incorporar função**: remove utilização de uma função. Ajuda na legibilidade, pois diminui a burocracia de fazer coisas pequenas que não precisariam de uma função específica.
 - **Extrair variável**: nomeia um trecho para uma variável. Ajuda na legibilidade, pois torna a leitura do algoritmo mais "natural".
+- **Evitar variáveis temporária/auxiliares sem propósito** pois são pouco expressivas
+- **Remover atribuição à parâmetros**: caso haja necessidade de mudar o valor de um parâmetro recebido, atribuir esse valor a uma nova variável. Fornece segurança na utilização dos parâmetros.
+- **Substituir algoritmo**: torna o algoritmo mais eficiente.
