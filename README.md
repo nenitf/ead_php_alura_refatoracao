@@ -34,9 +34,16 @@ docker-compose up
 
 ### Técnicas para mover itens entre objetos
 
-### Técnicas para organizar dados
-
 - **Mover método**: move responsabilidades de um método que está em uma classe mas deveria estar em outra. Quando um método utiliza uma classe apenas como "conjunto de dados" indevidamente fere o *tell, don't ask*.
 - **Extrair classe**: move responsabilidades que fazem sentido estarem em uma classe separada para tal.
 - **Incorporar classe**: evita complexidade desnecessária em extração de classes muito simples.
 - **Mover campo**: move propriedade para classe que faz sentido.
+
+### Técnicas para organizar dados
+
+- **Ocultar delegado**: cria um método que simplifica uma operação (para evitar chamar objeto por objeto até o responsável).
+    > **Lei de Demeter**: um objeto só deveria conhecer o próximo direto, e não propriedades de propriedades de propriedades...
+
+    > Lembra [composite pattern](https://refactoring.guru/design-patterns/composite)
+- **Remover intermediário** se não estiver sendo utilizado e não fizer sentido estar ali.
+- **Substituir número mágico**: substitui números/textos fixos por constantes, pois facilita na legibilidade (a constante possui nome) e na manutenibilidade (para atualizar o código basta mudar uma linha).
