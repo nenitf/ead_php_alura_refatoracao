@@ -47,3 +47,7 @@ docker-compose up
     > Lembra [composite pattern](https://refactoring.guru/design-patterns/composite)
 - **Remover intermediário** se não estiver sendo utilizado e não fizer sentido estar ali.
 - **Substituir número mágico**: substitui números/textos fixos por constantes, pois facilita na legibilidade (a constante possui nome) e na manutenibilidade (para atualizar o código basta mudar uma linha).
+- **Substituir array por objeto**: cria classe para tornar as propriedades auto descritivas.
+- **Encapsular campo**: torna as propriedades privadas como padrão e encapsula o acesso para visualização e/ou acesso por meio de métodos (normalmente *getters/setters*).
+- **Substituir subclasses por campos**: descarta necessidade de uma classe quando poderia ser uma propriedade de tipo simples.
+    > Pode fazer sentido criar uma *factory*: privando o construtor e instanciando a partir de um método estático da classe. Isso evita que o tipo simples novo seja criado indevidamente.
